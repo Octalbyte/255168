@@ -52,7 +52,7 @@ func jdi(boards []State, totones int, totfours int, totdraws int) {
 	//fmt.Print(unfinished)
 	for un := 0; un < len(unfinished); un++ {
 		nx := getNext(unfinished[un])
-		fmt.Print(nx, "\n")
+		fmt.Print(nx, "\n") //You may want to comment this out 
 		nexts = append(nexts, nx...)
 	}
 	if len(nexts) != 0 {
